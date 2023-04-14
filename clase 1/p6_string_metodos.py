@@ -1,14 +1,9 @@
-# Ask the user for their name
-name = input("What's your name? ")
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
 
-# Remove whitespace from the str
-name = name.strip()
 
-# Capitalize the first letter of each word
-name = name.title()
+def square(n):
+    return n * n
 
-# Ask the user for their name, remove whitespace from the str and capitalize the first letter of each word
-#name = input("What's your name? ").strip().title()
-
-# Print the output
-print(f"hello, {name}")
+main()
